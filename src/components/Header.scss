@@ -1,0 +1,15 @@
+@import '../shared/colors.scss';
+
+.tmj-header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100vw;
+  padding: 5px;
+  background: $headerBlack;
+  color: $white;
+  z-index: 9999;
+  a {
+    color: $white;
+  }
+}

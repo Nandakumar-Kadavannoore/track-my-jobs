@@ -1,0 +1,11 @@
+.tmj-header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100vw;
+  padding: 5px;
+  background: #212529;
+  color: #ffffff;
+  z-index: 9999; }
+  .tmj-header a {
+    color: #ffffff; }
