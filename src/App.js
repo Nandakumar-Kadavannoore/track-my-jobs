@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header />
-        <div>as</div>
+        <div>Hello world</div>
       </React.Fragment>
     )
   }

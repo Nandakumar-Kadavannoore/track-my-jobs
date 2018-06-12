@@ -6,10 +6,11 @@
   top: 0;
   width: 100vw;
   padding: 5px;
-  background: $headerBlack;
+  background: $white;
   color: $white;
   z-index: 9999;
+  box-shadow: 0 1px rgba(99,114,130,0.16);
   a {
-    color: $white;
+    color: $headerBlack;
   }
 }

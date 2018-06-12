@@ -4,8 +4,9 @@
   top: 0;
   width: 100vw;
   padding: 5px;
-  background: #212529;
+  background: #ffffff;
   color: #ffffff;
-  z-index: 9999; }
+  z-index: 9999;
+  box-shadow: 0 1px rgba(99, 114, 130, 0.16); }
   .tmj-header a {
-    color: #ffffff; }
+    color: #212529; }
