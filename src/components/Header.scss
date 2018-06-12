@@ -9,8 +9,13 @@
   background: $white;
   color: $white;
   z-index: 9999;
-  box-shadow: 0 1px rgba(99,114,130,0.16);
+  box-shadow: 0 1px rgba(99, 114, 130, 0.16);
   a {
-    color: $headerBlack;
+    color: $fontColor;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }
