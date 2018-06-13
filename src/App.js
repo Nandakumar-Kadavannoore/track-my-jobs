@@ -6,13 +6,17 @@ import './App.css'
 
 const CustomCard = props => (
   <React.Fragment>
-    <div className="card">{props.title}</div>
+    <div className="card">
+      <div className="">{props.title}</div>
+      <div className="">{props.description}</div>
+    </div>
   </React.Fragment>
 )
 
 class App extends Component {
   state = {}
   render() {
+    const laneStyle = { background: 'white', border: '1px solid #dfe7ef' }
     const data = {
       lanes: [
         {
@@ -23,12 +27,25 @@ class App extends Component {
             { id: 'Card1', title: 'Google', description: 'Software Engineer', label: '30 mins' },
             { id: 'Card2', title: 'Facebook', description: 'Software engineer', label: '5 mins' },
           ],
+          style: laneStyle,
         },
-        { id: 'lane2', title: 'Received First response', label: '0/0', cards: [] },
-        { id: 'lane3', title: 'Interview scheduled', label: '0/0', cards: [] },
-        { id: 'lane4', title: 'Second Round of interview', label: '0/0', cards: [] },
-        { id: 'lane5', title: 'Recieved offer', label: '0/0', cards: [] },
-        { id: 'lane5', title: 'Rejected / Declined', label: '0/0', cards: [] },
+        {
+          id: 'lane2',
+          title: 'Received First response',
+          label: '0/0',
+          cards: [],
+          style: laneStyle,
+        },
+        { id: 'lane3', title: 'Interview scheduled', label: '0/0', cards: [], style: laneStyle },
+        {
+          id: 'lane4',
+          title: 'Second Round of interview',
+          label: '0/0',
+          cards: [],
+          style: laneStyle,
+        },
+        { id: 'lane5', title: 'Recieved offer', label: '0/0', cards: [], style: laneStyle },
+        { id: 'lane5', title: 'Rejected / Declined', label: '0/0', cards: [], style: laneStyle },
       ],
     }
     return (
