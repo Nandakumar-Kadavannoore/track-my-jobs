@@ -2,16 +2,8 @@ import React, { Component } from 'react'
 import Board from 'react-trello'
 
 import Header from './components/Header'
+import CustomCard from './components/CustomCard'
 import './App.css'
-
-const CustomCard = props => (
-  <React.Fragment>
-    <div className="card">
-      <div className="">{props.title}</div>
-      <div className="">{props.description}</div>
-    </div>
-  </React.Fragment>
-)
 
 class App extends Component {
   state = {}
