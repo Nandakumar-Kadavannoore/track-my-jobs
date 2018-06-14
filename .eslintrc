@@ -29,6 +29,7 @@
           ".jsx"
         ]
       }
-    ]
+    ],
+  "import/extensions": 0,
   }
 }

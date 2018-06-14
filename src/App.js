@@ -9,6 +9,7 @@ class App extends Component {
   state = {}
   render() {
     const laneStyle = { background: 'white', border: '1px solid #dfe7ef' }
+    // temporary
     const data = {
       lanes: [
         {
