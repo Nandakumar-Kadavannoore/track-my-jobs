@@ -3,6 +3,7 @@ import Board from 'react-trello'
 
 import Header from './components/Header'
 import CustomCard from './components/CustomCard'
+import NewCard from './components/NewCard'
 import './App.css'
 
 class App extends Component {
@@ -51,6 +52,7 @@ class App extends Component {
           style={{ background: 'white' }}
           editable
           customCardLayout
+          newCardTemplate={<NewCard />}
         >
           <CustomCard />
         </Board>
