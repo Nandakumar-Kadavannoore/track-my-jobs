@@ -4,9 +4,13 @@ import PropTypes from 'prop-types'
 const NewCard = props => (
   <div className="card">
     <div className="">
-      <input type="text" name="title" />
-      <input type="text" name="name" />
-      <button>Add</button>
+      <div>
+        <input type="text" name="title" />
+      </div>
+      <div>
+        <input type="text" name="name" />
+      </div>
+      <button onClick={props.updateState}>Add</button>
     </div>
   </div>
 )
