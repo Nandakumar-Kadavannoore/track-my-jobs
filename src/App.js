@@ -59,8 +59,8 @@ class App extends Component {
     },
   }
 
-  updateState = () => {
-    console.log('updateState')
+  updateState = newCard => {
+    console.log('updateState', newCard)
   }
   render() {
     // const laneStyle = { background: 'white', border: '1px solid #dfe7ef' }
