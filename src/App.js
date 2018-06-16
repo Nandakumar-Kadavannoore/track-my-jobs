@@ -49,7 +49,7 @@ class App extends Component {
           style: { background: 'white', border: '1px solid #dfe7ef' },
         },
         {
-          id: 'lane5',
+          id: 'lane6',
           title: 'Rejected / Declined',
           label: '0/0',
           cards: [],
@@ -59,22 +59,35 @@ class App extends Component {
     },
   }
 
-  updateState = newCard => {
-    console.log('updateState', newCard)
+  // handleCardAdd = (card, laneId) => {
+  //   console.log(card)
+  // }
+
+  shouldReceiveNewData = nextData => {
+    console.log(nextData)
+    localStorage.setItem('boardData', JSON.stringify(nextData))
   }
+
   render() {
     // const laneStyle = { background: 'white', border: '1px solid #dfe7ef' }
     return (
       <React.Fragment>
         <Header />
         <Board
-          data={this.state.data}
+          data={JSON.parse(localStorage.getItem('boardData') || this.state.data)}
+          onDataChange={this.shouldReceiveNewData}
           draggable
           laneDraggable={false}
           style={{ background: 'white' }}
           editable
           customCardLayout
-          newCardTemplate={<NewCard updateState={this.updateState} />}
+          newCardTemplate={
+            <NewCard
+              updateState={
+                this.updateState // onCardAdd={this.handleCardAdd}
+              }
+            />
+          }
         >
           <CustomCard />
         </Board>

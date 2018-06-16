@@ -4,11 +4,14 @@ import PropTypes from 'prop-types'
 class NewCard extends Component {
   state = {
     title: null,
-    name: null,
+    description: null,
     label: null,
   }
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value })
+  }
+  handleAdd = () => {
+    this.props.onAdd(this.state)
   }
   render() {
     return (
@@ -18,19 +21,19 @@ class NewCard extends Component {
             <input type="text" name="title" onChange={e => this.handleChange(e)} />
           </div>
           <div>
-            <input type="text" name="name" onChange={e => this.handleChange(e)} />
+            <input type="text" name="description" onChange={e => this.handleChange(e)} />
           </div>
           <div>
             <input type="text" name="label" onChange={e => this.handleChange(e)} />
           </div>
-          <button onClick={() => this.props.updateState(this.state)}>Add</button>
+          <button onClick={this.handleAdd}>Add</button>
         </div>
       </div>
     )
   }
 }
 NewCard.propTypes = {
-  updateState: PropTypes.func.isRequired,
+  onAdd: PropTypes.func,
 }
 
 export default NewCard
