@@ -5,6 +5,33 @@
   .card:hover {
     background: #dfe7ef; }
 
+.add-new-button {
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
+  background: linear-gradient(135deg, #73a5ff, #5477f5);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif; }
+  .add-new-button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #5477f5, #73a5ff); }
+  .add-new-button:focus {
+    outline: none; }
+
 /* temporary fix - must find a solution */
 .jHtXmx {
   border-bottom: none; }
+
+section .add-new-button {
+  display: none; }
+
+section[title="Applied/Awaiting response"] .add-new-button {
+  display: block; }

@@ -6,6 +6,10 @@ import CustomCard from './components/CustomCard'
 import NewCard from './components/NewCard'
 import './App.css'
 
+const AddButton = () => {
+  return <button className="add-new-button">Add new offer</button>
+}
+
 class App extends Component {
   state = {
     data: {
@@ -15,8 +19,14 @@ class App extends Component {
           title: 'Applied/Awaiting response',
           label: '2/2',
           cards: [
-            { id: '123', title: 'Google', description: 'Software Engineer', label: '30 mins' },
-            { id: '234', title: 'Facebook', description: 'Software engineer', label: '5 mins' },
+            {
+              id: '123',
+              companyName: 'Google',
+              location: 'Software Engineer',
+              salary: '30 mins',
+              preference: '30 mins',
+              notes: 'Hello',
+            },
           ],
           style: { background: 'white', border: '1px solid #dfe7ef' },
         },
@@ -81,6 +91,7 @@ class App extends Component {
           style={{ background: 'white' }}
           editable
           customCardLayout
+          addCardLink={<AddButton />}
           newCardTemplate={
             <NewCard
               updateState={
