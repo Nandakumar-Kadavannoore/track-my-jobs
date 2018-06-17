@@ -26,3 +26,16 @@
     font-weight: bold;
   }
 }
+
+/* custom card component */
+
+.card {
+  .card-item {
+    margin-bottom: 10px;
+    font-size: 12px;
+    i {
+      display: inline-block;
+      margin-right: 3px;
+    }
+  }
+}

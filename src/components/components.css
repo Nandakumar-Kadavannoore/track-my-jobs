@@ -21,3 +21,11 @@
   background: linear-gradient(135deg, #73a5ff, #5477f5);
   color: white;
   font-weight: bold; }
+
+/* custom card component */
+.card .card-item {
+  margin-bottom: 10px;
+  font-size: 12px; }
+  .card .card-item i {
+    display: inline-block;
+    margin-right: 3px; }

@@ -44,14 +44,6 @@ class NewCard extends Component {
         </div>
         <div>
           <input
-            type="text"
-            placeholder="Preference"
-            name="preference"
-            onChange={e => this.handleChange(e)}
-          />
-        </div>
-        <div>
-          <input
             type="textarea"
             placeholder="Notes to self"
             name="notes"
