@@ -3,15 +3,25 @@ import PropTypes from 'prop-types'
 
 const CustomCard = props => (
   <div className="card">
-    <div className="">{props.title}</div>
-    <div className="">{props.description}</div>
-    <div className="">{props.label}</div>
+    <div className="">{props.companyName}</div>
+    <div className="">{props.location}</div>
+    <div className="">{props.salary}</div>
+    <div className="">{props.preference}</div>
+    <div className="">{props.notes}</div>
   </div>
 )
 CustomCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  companyName: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  salary: PropTypes.string,
+  preference: PropTypes.string,
+  notes: PropTypes.string,
+}
+
+CustomCard.defaultProps = {
+  salary: null,
+  preference: 'high',
+  notes: null,
 }
 
 export default CustomCard
