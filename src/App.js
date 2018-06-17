@@ -6,6 +6,10 @@ import CustomCard from './components/CustomCard'
 import NewCard from './components/NewCard'
 import './App.css'
 
+const AddButton = () => {
+  return <button className="add-new-button">Add new offer</button>
+}
+
 class App extends Component {
   state = {
     data: {
@@ -87,6 +91,7 @@ class App extends Component {
           style={{ background: 'white' }}
           editable
           customCardLayout
+          addCardLink={<AddButton />}
           newCardTemplate={
             <NewCard
               updateState={
