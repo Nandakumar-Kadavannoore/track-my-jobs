@@ -1,7 +1,8 @@
 .card {
   border: 1px solid #dfe7ef;
   padding: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: all 0.2s ease-in; }
   .card:hover {
     background: #dfe7ef; }
 
@@ -30,8 +31,21 @@
 .jHtXmx {
   border-bottom: none; }
 
+.kfefRd {
+  top: 2px;
+  right: 2px; }
+
+.ifVHOW {
+  background: #F62459;
+  height: 18px;
+  width: 18px;
+  border: none; }
+
+.ifVHOW:hover::before, .ifVHOW:hover::after {
+  background: #ECF0F1; }
+
 section .add-new-button {
   display: none; }
 
-section[title="Applied/Awaiting response"] .add-new-button {
+section[title='Applied/Awaiting response'] .add-new-button {
   display: block; }
