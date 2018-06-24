@@ -15,7 +15,7 @@ class App extends Component {
         {
           id: 'lane1',
           title: 'Applied/Awaiting response',
-          label: '2/2',
+          label: '-',
           cards: [
             {
               id: '123',
@@ -31,35 +31,35 @@ class App extends Component {
         {
           id: 'lane2',
           title: 'Received First response',
-          label: '0/0',
+          label: '-',
           cards: [],
           style: { background: 'white', border: '1px solid #dfe7ef' },
         },
         {
           id: 'lane3',
           title: 'Interview scheduled',
-          label: '0/0',
+          label: '-',
           cards: [],
           style: { background: 'white', border: '1px solid #dfe7ef' },
         },
         {
           id: 'lane4',
           title: 'Second Round of interview',
-          label: '0/0',
+          label: '-',
           cards: [],
           style: { background: 'white', border: '1px solid #dfe7ef' },
         },
         {
           id: 'lane5',
           title: 'Recieved offer',
-          label: '0/0',
+          label: '-',
           cards: [],
           style: { background: 'white', border: '1px solid #dfe7ef' },
         },
         {
           id: 'lane6',
           title: 'Rejected / Declined',
-          label: '0/0',
+          label: '-',
           cards: [],
           style: { background: 'white', border: '1px solid #dfe7ef' },
         },
