@@ -29,3 +29,28 @@
   .card .card-item i {
     display: inline-block;
     margin-right: 3px; }
+
+/* header component */
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #73a5ff, #5477f5);
+  box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
+  width: 90%;
+  position: absolute;
+  z-index: 1000;
+  top: -30px;
+  padding: 15px 10px;
+  left: 15px;
+  border-radius: 3px;
+  color: white; }
+  .card-header .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    width: 79%; }
+  .card-header .card-count {
+    width: 10%;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 12px; }
