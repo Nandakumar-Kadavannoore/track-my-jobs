@@ -33,24 +33,24 @@
 
 /* temporary fix - must find a solution */
 .jHtXmx {
-  border-bottom: none; }
+  border-bottom: none !important; }
 
 .kfefRd {
-  top: 2px;
-  right: 2px; }
+  top: 2px !important;
+  right: 2px !important; }
 
 .ifVHOW {
-  background: #F62459;
-  height: 18px;
-  width: 18px;
-  border: none;
-  border-radius: 18px 8px 18px 18px; }
+  background: #F62459 !important;
+  height: 18px !important;
+  width: 18px !important;
+  border: none !important;
+  border-radius: 18px 8px 18px 18px !important; }
 
 .ifVHOW:hover::before, .ifVHOW:hover::after {
-  background: #ECF0F1; }
+  background: #ECF0F1 !important; }
 
 section .add-new-button {
-  display: none; }
+  display: none !important; }
 
 section[title='Applied/Awaiting response'] .add-new-button {
-  display: block; }
+  display: block !important; }
