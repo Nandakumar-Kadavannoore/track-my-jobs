@@ -31,7 +31,7 @@
   .add-new-button:focus {
     outline: none; }
 
-/* temporary fix - must find a solution */
+/* temporary fix - must find a solution - make a PR to original package , or clone and build custom component */
 .jHtXmx {
   border-bottom: none !important; }
 
