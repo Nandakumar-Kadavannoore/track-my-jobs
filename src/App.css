@@ -49,8 +49,10 @@
 .ifVHOW:hover::before, .ifVHOW:hover::after {
   background: #ECF0F1 !important; }
 
-section .add-new-button {
-  display: none !important; }
+section {
+  background: rgba(115, 165, 255, 0.1) !important; }
+  section .add-new-button {
+    display: none !important; }
 
 section[title='Applied/Awaiting response'] .add-new-button {
   display: block !important; }
