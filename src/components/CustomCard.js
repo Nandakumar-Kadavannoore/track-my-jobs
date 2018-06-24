@@ -1,24 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import Building from '../shared/building.svg'
+import Dollar from '../shared/dollar.svg'
+import LocationMarker from '../shared/location.svg'
+import Notes from '../shared/notes.svg'
 import './components.css'
 
 const CustomCard = props => (
   <div className="card">
     <div className="card-item">
-      <i className="fas fa-building" />
+      <img src={Building} className="icon" alt="logo" />
       <span>{props.companyName} </span>
     </div>
     <div className="card-item">
-      <i className="fas fa-map-marker" />
+      <img src={LocationMarker} className="icon" alt="logo" />
       <span>{props.location} </span>
     </div>
     <div className="card-item">
-      <i className="fas fa-dollar-sign" />
+      <img src={Dollar} className="icon" alt="logo" />
       <span>{props.salary} </span>
     </div>
     <div className="card-item">
-      <i className="fas fa-sticky-note" />
+      <img src={Notes} className="icon" alt="logo" />
       <span>{props.notes} </span>
     </div>
   </div>

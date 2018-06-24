@@ -26,9 +26,15 @@
 .card .card-item {
   margin-bottom: 10px;
   font-size: 12px; }
-  .card .card-item i {
+  .card .card-item span {
     display: inline-block;
-    margin-right: 3px; }
+    padding-left: 20px; }
+
+.icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 3px;
+  position: absolute; }
 
 /* header component */
 .card-header {
@@ -37,12 +43,12 @@
   justify-content: space-between;
   background: linear-gradient(135deg, #73a5ff, #5477f5);
   box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
-  width: 90%;
+  width: 92%;
   position: absolute;
   z-index: 1000;
   top: -30px;
   padding: 15px 10px;
-  left: 15px;
+  left: 10px;
   border-radius: 3px;
   color: white; }
   .card-header .card-title {
