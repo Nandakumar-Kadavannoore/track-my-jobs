@@ -6,9 +6,7 @@ import CustomCard from './components/CustomCard'
 import NewCard from './components/NewCard'
 import './App.css'
 
-const AddButton = () => {
-  return <button className="add-new-button">Add new offer</button>
-}
+const AddButton = () => <button className="add-new-button">Add new offer</button>
 
 class App extends Component {
   state = {
@@ -69,12 +67,11 @@ class App extends Component {
     },
   }
 
-  // handleCardAdd = (card, laneId) => {
-  //   console.log(card)
-  // }
+  handleCardClick = (cardId, metadata) => {
+    console.log(cardId, metadata)
+  }
 
   shouldReceiveNewData = nextData => {
-    console.log(nextData)
     localStorage.setItem('boardData', JSON.stringify(nextData))
   }
 
@@ -84,7 +81,7 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <Board
-          data={JSON.parse(localStorage.getItem('boardData') || this.state.data)}
+          data={JSON.parse(localStorage.getItem('boardData')) || this.state.data}
           onDataChange={this.shouldReceiveNewData}
           draggable
           laneDraggable={false}
@@ -92,13 +89,8 @@ class App extends Component {
           editable
           customCardLayout
           addCardLink={<AddButton />}
-          newCardTemplate={
-            <NewCard
-              updateState={
-                this.updateState // onCardAdd={this.handleCardAdd}
-              }
-            />
-          }
+          onCardClick={(cardId, metadata) => this.handleCardClick(cardId, metadata)}
+          newCardTemplate={<NewCard />}
         >
           <CustomCard />
         </Board>
