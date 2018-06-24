@@ -8,7 +8,7 @@
     background: #dfe7ef; }
 
 .board-container {
-  padding-top: 50px; }
+  padding-top: 50px !important; }
 
 .add-new-button {
   width: 100%;
