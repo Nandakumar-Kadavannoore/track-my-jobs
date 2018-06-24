@@ -6,6 +6,9 @@
   .card:hover {
     background: #dfe7ef; }
 
+.board-container {
+  padding-top: 50px; }
+
 .add-new-button {
   width: 100%;
   border-radius: 5px;
@@ -39,7 +42,8 @@
   background: #F62459;
   height: 18px;
   width: 18px;
-  border: none; }
+  border: none;
+  border-radius: 18px 8px 18px 18px; }
 
 .ifVHOW:hover::before, .ifVHOW:hover::after {
   background: #ECF0F1; }

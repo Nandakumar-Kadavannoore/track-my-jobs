@@ -4,9 +4,10 @@ import Board from 'react-trello'
 import Header from './components/Header'
 import CustomCard from './components/CustomCard'
 import NewCard from './components/NewCard'
+import CardHeader from './components/CardHeader'
 import './App.css'
 
-const AddButton = () => <button className="add-new-button">Add new offer</button>
+const AddButton = () => <button className="add-new-button">Add new job</button>
 
 class App extends Component {
   state = {
@@ -91,6 +92,8 @@ class App extends Component {
           addCardLink={<AddButton />}
           onCardClick={(cardId, metadata) => this.handleCardClick(cardId, metadata)}
           newCardTemplate={<NewCard />}
+          customLaneHeader={<CardHeader />}
+          className="board-container"
         >
           <CustomCard />
         </Board>
