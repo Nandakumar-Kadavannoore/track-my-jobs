@@ -49,7 +49,7 @@
   padding: 15px 10px;
   left: 10px;
   border-radius: 3px;
-  border: 1px solid #dfe7ef; }
+  border: 1px solid rgba(115, 165, 255, 0.2); }
   .card-header .card-title {
     font-size: 13px;
     font-weight: bold;

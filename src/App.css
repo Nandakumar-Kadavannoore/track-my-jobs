@@ -1,11 +1,11 @@
 .card {
   margin-top: 10px;
-  border: 1px solid #dfe7ef;
+  border: 1px solid rgba(115, 165, 255, 0.2);
   padding: 10px;
   border-radius: 5px;
   transition: all 0.2s ease-in; }
   .card:hover {
-    background: #dfe7ef; }
+    background: rgba(115, 165, 255, 0.2); }
 
 .board-container {
   padding-top: 50px !important; }
