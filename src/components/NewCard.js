@@ -56,7 +56,7 @@ class NewCard extends Component {
   }
 }
 NewCard.propTypes = {
-  onAdd: PropTypes.func,
+  onAdd: PropTypes.func.isRequired,
 }
 
 export default NewCard
