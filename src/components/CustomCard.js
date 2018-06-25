@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Building from '../shared/building.svg'
-import Dollar from '../shared/dollar.svg'
-import LocationMarker from '../shared/location.svg'
-import Notes from '../shared/notes.svg'
+import Building from '../shared/images/building.svg'
+import Dollar from '../shared/images/dollar.svg'
+import LocationMarker from '../shared/images/location.svg'
+import Notes from '../shared/images/notes.svg'
 import './components.css'
 
 const CustomCard = props => (
