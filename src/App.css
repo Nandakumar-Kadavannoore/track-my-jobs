@@ -8,7 +8,8 @@
     background: rgba(115, 165, 255, 0.2); }
 
 .board-container {
-  padding-top: 50px !important; }
+  padding-top: 50px !important;
+  height: auto; }
 
 .add-new-button {
   width: 100%;

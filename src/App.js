@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Board from 'react-trello'
 
 import Header from './components/Header'
+import JobBoard from './components/JobBoard'
+import Resources from './components/Resources'
 import CustomCard from './components/CustomCard'
 import NewCard from './components/NewCard'
 import CardHeader from './components/CardHeader'
@@ -97,6 +99,8 @@ class App extends Component {
         >
           <CustomCard />
         </Board>
+        {/* <JobBoard /> */}
+        {/* <Resources /> */}
       </React.Fragment>
     )
   }
