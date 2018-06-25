@@ -15,6 +15,9 @@ class NewCard extends Component {
   handleAdd = () => {
     this.props.onAdd(this.state)
   }
+  handleCancel = () => {
+    this.props.onCancel()
+  }
   render() {
     return (
       <div className="new-card">
@@ -50,7 +53,12 @@ class NewCard extends Component {
             onChange={e => this.handleChange(e)}
           />
         </div>
-        <button onClick={this.handleAdd}>Add</button>
+        <button className="submit" onClick={this.handleAdd}>
+          Add
+        </button>
+        <button className="cancel" onClick={this.handleCancel}>
+          X
+        </button>
       </div>
     )
   }
