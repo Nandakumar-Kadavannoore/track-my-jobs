@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => (
   <div className="tmj-header">
-    <a href="/">Track my jobs</a>
+    <a href="/">My next job</a>
   </div>
 )
 
