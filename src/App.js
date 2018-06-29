@@ -99,8 +99,8 @@ class App extends Component {
         >
           <CustomCard />
         </Board>
-        {/* <JobBoard /> */}
-        {/* <Resources /> */}
+        <JobBoard />
+        <Resources />
       </React.Fragment>
     )
   }
