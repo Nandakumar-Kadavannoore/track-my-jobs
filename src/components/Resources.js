@@ -2,10 +2,14 @@ import React from 'react'
 
 import './components.css'
 
-const Resources = () => (
-  <div className="job-board">
-    Resources
-    <span> resource </span>
+const Resources = ({ resources }) => (
+  <div className="resource-board">
+    Useful Resources
+    {resources.map(resource => (
+      <div>
+        <a href={resource.url}> {resource.name}</a>
+      </div>
+    ))}
   </div>
 )
 
