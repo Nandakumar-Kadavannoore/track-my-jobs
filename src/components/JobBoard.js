@@ -2,10 +2,15 @@ import React from 'react'
 
 import './components.css'
 
-const JobBoard = () => (
+const JobBoard = ({ jobs }) => (
   <div className="job-board">
     Job Board
-    <span> jobs </span>
+    {jobs.map(job => (
+      <div>
+        <span> {job.name} </span>
+        <span> {job.description} </span>
+      </div>
+    ))}
   </div>
 )
 
