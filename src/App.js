@@ -68,6 +68,26 @@ class App extends Component {
         },
       ],
     },
+    jobs: [
+      {
+        name: 'job1',
+        description: 'job description',
+      },
+      {
+        name: 'job2',
+        description: 'job description',
+      },
+    ],
+    resources: [
+      {
+        name: 'resource1',
+        url: 'https://google.com',
+      },
+      {
+        name: 'resource2',
+        url: 'https://google.com',
+      },
+    ],
   }
 
   handleCardClick = (cardId, metadata) => {
@@ -99,8 +119,8 @@ class App extends Component {
         >
           <CustomCard />
         </Board>
-        <JobBoard />
-        <Resources />
+        <JobBoard jobs={this.state.jobs} />
+        <Resources resources={this.state.resources} />
       </React.Fragment>
     )
   }
