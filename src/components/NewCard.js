@@ -26,6 +26,7 @@ class NewCard extends Component {
             type="text"
             placeholder="Name of the company"
             name="companyName"
+            autoFocus
             onChange={e => this.handleChange(e)}
           />
         </div>
