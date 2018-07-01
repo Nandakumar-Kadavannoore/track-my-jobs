@@ -7,6 +7,7 @@ import Resources from './components/Resources'
 import CustomCard from './components/CustomCard'
 import NewCard from './components/NewCard'
 import CardHeader from './components/CardHeader'
+import Footer from './components/Footer'
 import './App.css'
 
 const AddButton = () => <button className="add-new-button">Add new job</button>
@@ -120,6 +121,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header />
+
         <Board
           data={JSON.parse(localStorage.getItem('boardData')) || this.state.data}
           onDataChange={this.shouldReceiveNewData}
@@ -136,8 +138,10 @@ class App extends Component {
         >
           <CustomCard />
         </Board>
+
         <JobBoard jobs={this.state.jobs} />
         <Resources resources={this.state.resources} />
+        <Footer />
       </React.Fragment>
     )
   }
