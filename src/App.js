@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Board from 'react-trello'
-
 import Header from './components/Header'
 import JobBoard from './components/JobBoard'
 import Resources from './components/Resources'
@@ -11,7 +10,6 @@ import Footer from './components/Footer'
 import './App.css'
 
 const AddButton = () => <button className="add-new-button">Add new job</button>
-
 class App extends Component {
   state = {
     data: {
