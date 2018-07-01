@@ -52,7 +52,7 @@
   position: absolute; }
 
 /* header component */
-.card-header {
+.lane-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -65,12 +65,16 @@
   left: 10px;
   border-radius: 3px;
   border: 1px solid rgba(115, 165, 255, 0.2); }
-  .card-header .card-title {
+  .lane-header .lane-title {
     font-size: 13px;
     font-weight: bold;
     width: 79%; }
-  .card-header .card-count {
+  .lane-header .lane-count {
     width: 5%;
     text-align: right;
     padding-right: 10px;
     font-size: 12px; }
+
+/* job board */
+.job-board {
+  max-width: 90; }

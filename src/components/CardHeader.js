@@ -4,10 +4,10 @@ import './components.css'
 
 const CardHeader = props => (
   <div>
-    <header className="card-header">
-      <div className="card-title">{props.title}</div>
-      <div className="card-count">{props.cards.length}</div>
-    </header>
+    <div className="lane-header">
+      <div className="lane-title">{props.title}</div>
+      <div className="lane-count">{props.cards.length}</div>
+    </div>
   </div>
 )
 
