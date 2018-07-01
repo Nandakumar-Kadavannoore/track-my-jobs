@@ -72,10 +72,27 @@ class App extends Component {
       {
         name: 'job1',
         description: 'job description',
+        url: 'https://google.com',
       },
       {
         name: 'job2',
         description: 'job description',
+        url: 'https://google.com',
+      },
+      {
+        name: 'job2',
+        description: 'job description',
+        url: 'https://google.com',
+      },
+      {
+        name: 'job2',
+        description: 'job description',
+        url: 'https://google.com',
+      },
+      {
+        name: 'job2',
+        description: 'job description',
+        url: 'https://google.com',
       },
     ],
     resources: [
