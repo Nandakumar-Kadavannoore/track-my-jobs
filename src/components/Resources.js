@@ -3,7 +3,7 @@ import React from 'react'
 import './components.css'
 
 const Resources = ({ resources }) => (
-  <div className="container mt-4">
+  <div className="container-fluid mt-4">
     <div className="resource-board">
       <h2> Useful Resources </h2>
       {resources.map(resource => (
