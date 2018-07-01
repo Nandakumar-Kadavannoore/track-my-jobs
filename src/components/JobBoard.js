@@ -3,7 +3,7 @@ import React from 'react'
 import './components.css'
 
 const JobBoard = ({ jobs }) => (
-  <div className="container">
+  <div className="container mt-4">
     <h2> Jobs </h2>
     <div className="job-board row">
       {jobs.map(job => (

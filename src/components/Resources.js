@@ -3,13 +3,15 @@ import React from 'react'
 import './components.css'
 
 const Resources = ({ resources }) => (
-  <div className="resource-board">
-    Useful Resources
-    {resources.map(resource => (
-      <div>
-        <a href={resource.url}> {resource.name}</a>
-      </div>
-    ))}
+  <div className="container mt-4">
+    <div className="resource-board">
+      <h2> Useful Resources </h2>
+      {resources.map(resource => (
+        <div>
+          <a href={resource.url}> {resource.name}</a>
+        </div>
+      ))}
+    </div>
   </div>
 )
 
