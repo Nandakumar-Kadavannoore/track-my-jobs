@@ -107,5 +107,16 @@
 /* job board */
 
 .job-board {
-  max-width: 90
+  .job-card {
+    border: 1px solid rgba(115, 165, 255, 0.2);
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    .job-title {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
 }
