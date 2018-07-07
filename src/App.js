@@ -94,16 +94,48 @@ class App extends Component {
         url: 'https://google.com',
       },
     ],
-    resources: [
-      {
-        name: 'resource1',
-        url: 'https://google.com',
-      },
-      {
-        name: 'resource2',
-        url: 'https://google.com',
-      },
-    ],
+    resources: {
+      before_job: [
+        {
+          name: 'resource1',
+          url: 'https://google.com',
+        },
+        {
+          name: 'resource2',
+          url: 'https://google.com',
+        },
+      ],
+      during_job: [
+        {
+          name: 'resource1',
+          url: 'https://google.com',
+        },
+        {
+          name: 'resource2',
+          url: 'https://google.com',
+        },
+      ],
+      after_offer: [
+        {
+          name: 'resource1',
+          url: 'https://google.com',
+        },
+        {
+          name: 'resource2',
+          url: 'https://google.com',
+        },
+      ],
+      general: [
+        {
+          name: 'resource1',
+          url: 'https://google.com',
+        },
+        {
+          name: 'resource2',
+          url: 'https://google.com',
+        },
+      ],
+    },
   }
 
   handleCardClick = (cardId, metadata) => {
