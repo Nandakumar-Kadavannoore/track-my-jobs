@@ -86,3 +86,14 @@
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 10px; }
+
+/* footer */
+.tmj-footer {
+  background: #73a5ff;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  text-align: center; }
+  .tmj-footer a {
+    color: white;
+    text-decoration: underline; }
