@@ -7,7 +7,7 @@ const Resources = ({ resources }) => (
     <h2 className="col-sm-12"> Resources </h2>
     <div className="col-sm-3">
       <div className="job-card">
-        <div> Before job search </div>
+        <div className="job-title"> Before job search </div>
         {resources.before_job.map(resource => (
           <div>
             <a href={resource.url}> {resource.name}</a>
@@ -17,7 +17,7 @@ const Resources = ({ resources }) => (
     </div>
     <div className="col-sm-3">
       <div className="job-card">
-        <div> During job search </div>
+        <div className="job-title"> During job search </div>
         {resources.during_job.map(resource => (
           <div>
             <a href={resource.url}> {resource.name}</a>
@@ -27,7 +27,7 @@ const Resources = ({ resources }) => (
     </div>
     <div className="col-sm-3">
       <div className="job-card">
-        <div> After you have an offer </div>
+        <div className="job-title"> After you have an offer </div>
         {resources.after_offer.map(resource => (
           <div>
             <a href={resource.url}> {resource.name}</a>
@@ -37,7 +37,7 @@ const Resources = ({ resources }) => (
     </div>
     <div className="col-sm-3">
       <div className="job-card">
-        <div> General </div>
+        <div className="job-title"> General </div>
         {resources.general.map(resource => (
           <div>
             <a href={resource.url}> {resource.name}</a>
