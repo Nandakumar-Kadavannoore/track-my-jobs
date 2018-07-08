@@ -1,3 +1,5 @@
+@import '../shared/colors.scss';
+
 /* new card component */
 .new-card {
   input {
@@ -5,12 +7,12 @@
     padding: 10px 5px;
     border-radius: 3px;
     margin-top: 5px;
-    border: 1px solid #dfe7ef;
+    border: 1px solid $borderColor;
     font-family: 'Roboto', sans-serif;
 
     &:focus {
       outline: none;
-      border: 1px solid rgb(123, 22, 255);
+      border: 1px solid $inputBorder;
     }
   }
   button {
@@ -31,21 +33,21 @@
     &.submit {
       width: 80%;
       box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
-      background: linear-gradient(135deg, #73a5ff, #5477f5);
+      background: linear-gradient(135deg, $gradientBlueLight, $gradientBlueDark);
       margin-right: 5px;
 
       &:hover {
         transform: translateY(-2px);
-        background: linear-gradient(135deg, #5477f5, #73a5ff);
+        background: linear-gradient(135deg, $gradientBlueDark, $gradientBlueLight);
       }
     }
     &.cancel {
       width: 18%;
-      background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+      background-image: linear-gradient(to top, $gradientRedLight 0%, $gradientRedDark 100%);
 
       &:hover {
         transform: translateY(-2px);
-        background-image: linear-gradient(to top, #fe5196 0%, #f77062 100%);
+        background-image: linear-gradient(to top, $gradientRedDark 0%, $gradientRedLight 100%);
       }
     }
   }
@@ -85,16 +87,11 @@
   padding: 15px 10px;
   left: 10px;
   border-radius: 3px;
-  border: 1px solid rgba(115, 165, 255, 0.2);
-  // .icon {
-  //   width: 18px;
-  //   height: auto;
-  // }
+  border: 1px solid $borderColor;
   .lane-title {
     font-size: 13px;
     font-weight: bold;
     width: 79%;
-    // padding-left: 20px;
   }
   .lane-count {
     width: 5%;
@@ -108,7 +105,7 @@
 
 .job-board {
   .job-card {
-    border: 1px solid rgba(115, 165, 255, 0.2);
+    border: 1px solid $borderColor;
     padding: 20px;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -124,7 +121,7 @@
 /* footer */
 
 .tmj-footer {
-  background: #73a5ff;
+  background: $gradientBlueLight;
   color: white;
   height: 60px;
   line-height: 60px;
