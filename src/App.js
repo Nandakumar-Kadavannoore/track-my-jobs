@@ -21,7 +21,7 @@ class App extends Component {
           cards: [
             {
               id: '123',
-              companyName: 'Google',
+              companyName: 'Alphabet Inc',
               location: 'Software Engineer',
               salary: '30 mins',
               preference: '30 mins',
